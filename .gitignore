@@ -1,0 +1,48 @@
+# === Python cache ===
+__pycache__/
+*.py[cod]
+*$py.class
+
+# === Virtual environment ===
+venv/
+.env/
+.venv/
+
+# === OS / Editor files ===
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp
+
+# === Python dependencies ===
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+pip-wheel-metadata/
+*.log
+
+# === Project-specific folders ===
+# Datasets
+data/
+# Embeddings or generated features
+embeddings/
+
+# === Checkpoints or model weights ===
+*.pt
+*.pth
+*.h5
+*.ckpt
+
+# === Jupyter notebooks checkpoints (if any) ===
+.ipynb_checkpoints/
+
+# === Temporary files ===
+*.tmp
+*.bak
+*.old
+
+# === Environment configuration ===
+.envrc
+*.env
