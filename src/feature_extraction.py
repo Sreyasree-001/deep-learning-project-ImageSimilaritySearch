@@ -8,20 +8,20 @@ import os
 def extract_embeddings():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    # === CONFIG ===
+    
     DATA_DIR = "data/caltech101/101_ObjectCategories"
     MODEL_PATH = "model/resnet50_finetuned_20epochs.pth"
     SAVE_DIR = "embeddings_20epochs"
     os.makedirs(SAVE_DIR, exist_ok=True)
 
-    # === LOAD MODEL ===
+    
     model = models.resnet50(weights=None)
     model.fc = torch.nn.Linear(model.fc.in_features, 102)
     model.load_state_dict(torch.load(MODEL_PATH, map_location=device))
     model = torch.nn.Sequential(*list(model.children())[:-1])
     model.to(device).eval()
 
-    # === TRANSFORMS ===
+
     transform = transforms.Compose([
         transforms.Resize((224, 224)),
         transforms.ToTensor(),
@@ -31,7 +31,7 @@ def extract_embeddings():
         ),
     ])
 
-    # === LOAD DATA ===
+    
     dataset = datasets.ImageFolder(root=DATA_DIR, transform=transform)
     loader = DataLoader(dataset, batch_size=32, shuffle=False)
 
