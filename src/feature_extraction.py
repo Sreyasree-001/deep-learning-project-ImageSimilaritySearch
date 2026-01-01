@@ -51,7 +51,7 @@ def extract_embeddings():
     np.save(os.path.join(SAVE_DIR, "train_embeddings.npy"), embeddings)
     np.save(os.path.join(SAVE_DIR, "train_image_paths.npy"), np.array(image_paths))
 
-    print(f"✅ Saved train embeddings: {embeddings.shape}")
+    print(f"Saved train embeddings: {embeddings.shape}")
 
 if __name__ == "__main__":
     extract_embeddings()
