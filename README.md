@@ -2,6 +2,9 @@
 A deep learning–based Content-Based Image Retrieval (CBIR) system that retrieves and recommends visually similar images using **ResNet50 embeddings** and **cosine similarity**.  
 Built on the **Caltech-101 dataset** and powered by **PyTorch**.
 
+## Project Demo Video
+https://drive.google.com/file/d/10_ycUXxDlTay2mg9kGzNtilsIA71lJiq/view?usp=sharing
+
 ## Project Overview
 Traditional keyword-based image search fails to capture actual visual similarity.  
 This project uses **deep convolutional neural networks (CNNs)** to learn semantic visual embeddings from images and perform **accurate similarity search & recommendation**.
