@@ -40,7 +40,7 @@ def apply_theme():
 
 
 def login_page():
-    st.title("🔐 Login")
+    st.title("Login")
 
     st.markdown("<br>", unsafe_allow_html=True)
 
@@ -62,7 +62,7 @@ def login_page():
 
 
 def signup_page():
-    st.title("📝 Sign Up")
+    st.title("Sign Up")
 
     st.markdown("<br>", unsafe_allow_html=True)
 
@@ -80,7 +80,7 @@ def signup_page():
 
 
 def admin_panel():
-    st.title("🛠 Admin Panel")
+    st.title("Admin Panel")
 
     vectors = np.load("embeddings_20epochs/image_vectors.npy")
     paths = np.load("embeddings_20epochs/image_paths.npy")
@@ -104,8 +104,8 @@ def dashboard():
     apply_theme()
 
     st.sidebar.title("Controls")
-    st.sidebar.write(f"👤 {st.session_state.user}")
-    st.sidebar.write(f"🔑 {st.session_state.role}")
+    st.sidebar.write(f"User: {st.session_state.user}")
+    st.sidebar.write(f"Role: {st.session_state.role}")
 
     theme_choice = st.sidebar.radio(
         "Theme",
@@ -125,7 +125,7 @@ def dashboard():
             admin_panel()
             return
 
-    st.title("🔍 Image Similarity Search")
+    st.title("Image Similarity Search")
     st.markdown("<hr>", unsafe_allow_html=True)
 
     uploaded_img = st.file_uploader(
