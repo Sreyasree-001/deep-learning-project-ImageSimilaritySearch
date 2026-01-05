@@ -17,6 +17,7 @@ Key features:
 - Highly accurate (≈ **96% validation accuracy**)
 
 ## System Architecture
+<img width="1420" height="711" alt="image" src="https://github.com/user-attachments/assets/9e4c5427-4ee8-4ce8-af51-cc1492da6a13" />
 
 
 ## Dataset Details
@@ -69,4 +70,7 @@ Key features:
 - Demonstrates strong semantic representation
 
 ## Sample Outputs
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7ec4b40f-19a3-4d77-8380-d8b7778203f0" />
+<img width="1575" height="908" alt="image" src="https://github.com/user-attachments/assets/29523c22-26c5-4132-9a62-3d57c61f7622" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/7b3aa837-1222-4eb8-9b6f-59502442f421" />
 
