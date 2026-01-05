@@ -51,4 +51,19 @@ Key features:
     └── data/
         └── caltech101/
 
+## Result and Observations
+- Model Accuracy: 96% validation accuracy
+- Early stopping after stable convergence
+- Embedding Quality: 2048-dimensional feature vectors
+- Captures high-level shapes, textures, patterns
+- Similarity Retrieval: Top-5 most similar images retrieved
+- Cosine similarity scores nearly 0.90 to 0.95
+- Performance Efficiency
+- Fast retrieval using pre-computed embeddings
+- Stored as NumPy arrays for quick access
+- Feature Space Behavior
+- Similar-category images cluster closely
+- Demonstrates strong semantic representation
+
+## Sample Outputs
 
